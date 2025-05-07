@@ -7,7 +7,7 @@ import Form from "./components/Form";
 
 export default function App() {
   // Variable with your API Key
-  const apiKey = "6e2e1ca8";
+  const apiKey = "98e3fb1f";
 
   // State to hold movie data
   const [movie, setMovie] = useState(null);
@@ -16,7 +16,7 @@ export default function App() {
   const getMovie = async (searchTerm) => {
     // Make fetch request and store the response
     const response = await fetch(
-      `http://www.omdbapi.com/?apikey=${6e2e1ca8}&t=${searchTerm}`
+      `http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`
     );
     // Parse JSON response into a JavaScript object
     const data = await response.json();
